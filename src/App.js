@@ -1,21 +1,25 @@
 
 import './App.scss';
-//import HomePage from './pages/HomePage/HomePage';
-import { Container, Row, Col } from 'react-bootstrap';
+import HomePage from './pages/HomePage/HomePage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CharactersPage from './pages/CharactersPage/CharactersPage';
+import HousesPage from './pages/HousesPage/HousesPage';
+import ChronologyPage from './pages/ChronologyPage/ChronologyPage';
+
 
 function App() {
   return (
-    <Container>
-    <Row>
-      <Col><img> </img></Col>
-      <Col>2 of 2</Col>
-    </Row>
-    <Row>
-      <Col>1 of 3</Col>
-      <Col>2 of 3</Col>
-      <Col>3 of 3</Col>
-    </Row>
-  </Container>
+  <div >
+ <Router>
+ <Routes>
+       
+         <Route path="/" element={<HomePage />}/>
+         <Route path="/houses/" element={<HousesPage />} />
+         <Route path="/characters" element={<CharactersPage />}/>
+         <Route path="/timeline" element={<ChronologyPage />}/>
+       </Routes>
+</Router>
+  </div>
   );
 }
 

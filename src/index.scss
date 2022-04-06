@@ -1,0 +1,13 @@
+@import './styles/imports/settings.import';
+@import './styles/imports/generic.imports';
+@import './styles/imports/components.imports';
+@import '~bootstrap/scss/bootstrap-grid';
+
+
+body {
+  margin: 0;
+  font-family: 'Game of Thrones';
+  background-color: black;
+  color: white;
+  overflow-y: hidden;
+}

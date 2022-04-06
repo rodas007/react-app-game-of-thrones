@@ -1,36 +1,22 @@
 import React from 'react'
+import Nabvar from '../../components/Navbar/NavBar'
 import "./HomePage.scss"
 
-import Alert from 'react-bootstrap/Alert';
+
 
 export default function HomePage() {
     
   return (
 
 
-    <>Esto es la HomePage
-    
+<div className="c-home">
 
- <span classname="row">
- 
-<div className="cuadrado"/>
-<div className="cuadrado1"/>
-<div className="cuadrado2"/>
-<div className="cuadrado3"/>
-<div className="cuadrado4"/>
-</span>
+<h1 className="c-home__title"> GAME OF THRONES</h1>
 
-<Alert dismissible variant="danger">
-      <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-      <p>
-        Change this and that and try again.
-      </p>
-    </Alert>
-  
+<Nabvar/>
 
-    
+</div>
 
 
-</>
   )
 }
