@@ -1,5 +1,6 @@
 import React from 'react'
-import Nabvar from '../../components/Navbar/NavBar'
+import Nabvar from '../../components/NabVar/NabVar'
+import TransBar from '../../components/TransBar/TransBar'
 import "./HomePage.scss"
 
 
@@ -10,8 +11,8 @@ export default function HomePage() {
 
 
 <div className="c-home">
-
-<h1 className="c-home__title"> GAME OF THRONES</h1>
+<TransBar/>
+<h1 className="c-home__title"> game of thrones</h1>
 
 <Nabvar/>
 

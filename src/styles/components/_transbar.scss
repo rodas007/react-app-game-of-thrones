@@ -1,0 +1,128 @@
+.c-transBar {
+    margin-top: 2rem;
+    margin-left: 10%;
+    display: flex;
+  
+    &__contentSearch {
+      border-bottom: 2px solid white;
+    }
+  
+    &__search {
+      margin-top: 1.8rem;
+      margin-right: 35rem;
+      height: 2rem;
+      font-size: 24px;
+      width: 12rem;
+      background-color: black;
+      border: none;
+      outline: none;
+      color: white;
+    }
+  
+    &__img {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  
+    &__imghouse {
+      margin-right: 1rem;
+      margin-bottom: 0.65rem;
+    }
+  
+    &__link {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  
+    &__button {
+      margin-left: 35rem;
+      padding-left: 50rem;
+      position: absolute;
+    }
+  
+    &__imgBack {
+      font-family: 'Lato';
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      margin-right: 1rem;
+  
+      span {
+        position: absolute;
+        margin-left: 1rem;
+      }
+    }
+  }
+  
+  
+  
+  
+  @media only screen and (max-device-width: 480px) {
+    .c-tranoBar {
+      margin-top: 1rem;
+      font-size: 3vw;
+      width: 70%;
+      margin-left: 3rem;
+  
+  
+      &__contentSearch {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+  
+      
+  
+      &__search {
+        font-size: 1rem;
+      }
+  
+      &__button {
+        display: flex;
+        margin-left: 13rem;
+        padding: 0;
+        margin-top: -1.2rem;
+      }
+  
+      &__imghouse {
+        width: 20px;
+        height: 20px;
+        margin-top: 1.5rem;
+        margin-right: -2rem;
+      }
+  
+      &__img {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin-left: 1rem;
+      }
+  
+      &__link {
+        margin-left: 1rem;
+        margin-top: 2.7rem;
+        cursor: pointer;
+      }
+  
+      &__imgBack {
+        width: 20px;
+        height: 20px;
+        margin-top: 0.5rem;
+        span {
+          display: none;
+          margin-left: 1rem;
+        }
+      }
+    }
+  
+    .iconSearch {
+      display: none;
+    }
+  
+   
+  
+  
+  }
