@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.c-char{
+   
+    &__basic{
+        margin-left: 40%;
+        margin-top: 7rem;
+    }
+
+    &__img{
+        width: 248px;
+        height: 320px;
+        
+    }
+
+    &__name{
+        font-size: 36px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        margin-left: -51rem;
+        margin-top: 2rem;
+    }
+
+    &__title{
+        font-size: 24px;
+        
+    }
+
+    &__house{
+        width: 120px;
+        height: 141.6px;
+        margin-left: -0.8rem;
+    }
+
+    &__apires{
+        text-align: center;
+        font-family: 'Lato';
+        font-size: 16px;
+        overflow-y: auto;
+        height: 180px;
+        margin: -1.5rem;
+
+
+  &__aspires{
+            /* For Firefox */
+    overflow-y: scroll;
+    scrollbar-color: white #443d3d;
+    scrollbar-width: thin;
+  }
+
+
+        &::-webkit-scrollbar{
+            width: 4px;
+            background-color: #443d3d;
+        }
+        &::-webkit-scrollbar-thumb{
+            width: 4px;  
+            background-color: white;
+        }
+
+
+
+
+
+    }
+
+    &__extra{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    
+
+    
+}
+
+@media only screen and (max-device-width: 480px){
+    .c-char{
+        display: block;
+        overflow-x: hidden;
+        height: 700px;
+        &__basic{
+            
+            margin-left: 2rem;
+            margin-top: 4.5rem;
+        }
+        &__img{
+            width: 248px;
+            height: 320px;
+            object-fit: contain;
+        }
+    
+        &__name{
+            font-size: 26px;
+            margin-left: -2rem;
+            margin-bottom: 3rem;
+        }
+    
+        &__title{
+            font-size: 18px;
+            margin-bottom: 2rem;
+        }
+    
+        &__house{
+            margin-left: 0.3rem;
+            margin-bottom: 2rem;
+        }
+
+        &__apires{
+            
+            height: 100px;
+           
+        }
+
+        &__item{
+            margin-bottom: 8rem;
+        }
+        &__extra{
+            display: inline;
+            text-align: center;
+        }
+    }
+}

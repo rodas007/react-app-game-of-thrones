@@ -1,4 +1,4 @@
-.c-characters-gallery{
+.c-house-gallery{
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
@@ -6,56 +6,36 @@
     margin-left: 8rem;
     height: 700px;
     width: 105rem;
-
-    &__content{
-        margin-right: -1rem;
-        position: relative;
-        &:hover{
-            
-            .c-characters-gallery__name{
-                opacity: 1;
-            }
-        }   
-    }
     
-    &__img{
-        width: 248px;
-        height: 320px;
-         
+    &__content{
+        position: relative;
+        margin-right: -1rem;
     }
-
-    &__name{
-        position: absolute;
-        z-index: 10;
-        top: 17.5rem;
-        left: 3.45rem;
-        display: block;
-        color: white;
-        text-align: center;
+    &__image{
         width: 248px;
-        height: 56px;
-        padding: 21px 28px 21px 29px;
-        background-color: rgba(0, 0, 0, 0.5);
+        height: 297px;
+    }
+    &__name{
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        transition: 0.5s opacity ease-in-out;
-        opacity: 0;
-        
-    
-    
-}
+        color: white;
+        text-align: center;
+        margin-left: 3.5rem;
+        margin-top: 1rem;
+        position: absolute;
+    }
 }
 
-.c-characters-gallery::-webkit-scrollbar{
+.c-house-gallery::-webkit-scrollbar{
     width: 4px;
     background-color: #443d3d;
 }
 
-.c-characters-gallery::-webkit-scrollbar-thumb{
+.c-house-gallery::-webkit-scrollbar-thumb{
     width: 4px;
     height: 91.3px;
     background-color: white;
@@ -63,7 +43,7 @@
 
 
 @media only screen and (max-device-width: 480px){
-    .c-characters-gallery {
+    .c-house-gallery {
       width: 98vw;
       height: 100vh;
       display: flex;
@@ -75,4 +55,3 @@
       }
     }
   }
-  

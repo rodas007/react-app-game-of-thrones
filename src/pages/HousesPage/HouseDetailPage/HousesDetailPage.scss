@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.c-house{
+    
+
+    &__basic{
+        margin-left: 40%;
+        margin-top: 7rem;
+    }
+    &__img{
+        width: 248px;
+        height: 320px;
+        object-fit: contain;
+    }
+    &__text{
+        text-align: center;
+        font-family: 'Lato';
+        font-size: 16px;
+        
+    }
+    
+    &__extra{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    &__name{
+        font-size: 36px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        margin-left: -51rem;
+        margin-top: 2rem;
+    }
+    &__title{
+        font-size: 24px;
+    }
+    
+}
+
+.empty{
+    display: none;
+}
+
+
+@media only screen and (max-device-width: 480px){
+    .c-house{
+        display: block;
+        overflow-x: hidden;
+        height: 600px;
+        padding-bottom: 80%;
+        &__basic{
+            width: 100vh;
+            margin-left: 2rem;
+            margin-top: 4.5rem;
+        }
+        &__img{
+            width: 248px;
+            height: 320px;
+            object-fit: contain;
+        }
+    
+        &__name{
+            font-size: 26px;
+            margin-left: -20rem;
+            margin-bottom: 5rem;
+        }
+    
+        &__title{
+            font-size: 18px;
+            
+        }
+    
+        &__extra{
+            display: inline;
+            text-align: center;
+            &__box{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+

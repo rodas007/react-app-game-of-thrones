@@ -3,7 +3,7 @@ import { API } from "../../styles/context/api.const";
 import Nabvar from '../../components/NabVar/NabVar'
 import TransBar from '../../components/TransBar/TransBar'
 import './CharactersPage.scss'
-import CharactersGallery from "../../components/CharactersGallery.jsx/CharactersGallery";
+import CharactersGallery from "../../components/CharactersGallery/CharactersGallery";
 
 let allChar = [];
 
