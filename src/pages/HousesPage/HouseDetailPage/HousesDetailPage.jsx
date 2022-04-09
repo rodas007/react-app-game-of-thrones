@@ -3,11 +3,11 @@ import { API } from "../../../styles/context/api.const";
 import './HousesDetailPage.scss';
 import { useParams } from 'react-router-dom';
 import TransBar from '../../../components/TransBar/TransBar'
-
+import { useTranslation } from "react-i18next/";
 
 export function HousesDetailPage() {
 
-    
+    const {t} = useTranslation(['translation']);
 
     const [casa, setCasa] = useState(null);
 
@@ -22,7 +22,7 @@ export function HousesDetailPage() {
         })
     }
 
-    useEffect(getCasa, [])
+    useEffect(getCasa, [name])
     
     
     return (
@@ -41,7 +41,7 @@ export function HousesDetailPage() {
 
             {casa.words
                 ?<div className="c-house__extra__box">
-                    <h3 className="c-house__title">{('WORDS')}</h3>       
+                    <h3 className="c-house__title">{t('WORDS')}</h3>       
                     <div className="c-house__text">
                         <p>{casa.words}</p>
                     </div>
@@ -51,7 +51,7 @@ export function HousesDetailPage() {
 
             {(casa.seat).length > 0
                 ?<div className="c-house__extra__box">
-                    <h3 className="c-house__title">{('SEAT')}</h3>
+                    <h3 className="c-house__title">{t('SEAT')}</h3>
                     <div className="c-house__text">
                         <p>{casa.seat}</p>
                     </div>
@@ -61,7 +61,7 @@ export function HousesDetailPage() {
 
             {casa.region
                 ?<div className="c-house__extra__box">
-                    <h3 className="c-house__title">{('REGION')}</h3>
+                    <h3 className="c-house__title">{t('REGION')}</h3>
                     <div className="c-house__text">
                         <p>{casa.region}</p>
                     </div>
@@ -71,7 +71,7 @@ export function HousesDetailPage() {
 
             {(casa.allegiance).length > 0
                 ?<div className="c-house__extra__box">
-                    <h3 className="c-house__title">{('ALLEGIANCES')}</h3>
+                    <h3 className="c-house__title">{t('ALLEGIANCES')}</h3>
                     <div className="c-house__text">
                         <p>{casa.allegiance}</p>
                     </div>
@@ -80,7 +80,7 @@ export function HousesDetailPage() {
             }
             {(casa.religion).length > 0
                 ?<div className="c-house__extra__box">
-                    <h3 className="c-house__title">{('RELIGIONS')}</h3>            
+                    <h3 className="c-house__title">{t('RELIGIONS')}</h3>            
                     <div className="c-house__text">
                         <p>{casa.religion}</p>
                     </div>
@@ -89,7 +89,7 @@ export function HousesDetailPage() {
             }
             {casa.createdAt
                 ?<div className="c-house__extra__box">
-                    <h3 className="c-house__title">{('FOUNDATION')}</h3>            
+                    <h3 className="c-house__title">{t('FOUNDATION')}</h3>            
                     <div className="c-house__text">
                         <p>{casa.createdAt}</p>
                     </div>

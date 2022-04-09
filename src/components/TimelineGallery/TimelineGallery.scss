@@ -1,0 +1,149 @@
+.mainDivTime{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 505px;
+    align-items: flex-start;
+}
+.timeLineSectionMain
+{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: 8rem;
+    height: 630px;
+    width: 105rem;
+    display: flex;
+    
+}
+.timeLineSection{
+   
+    margin: auto;
+}
+.startCircle{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+}
+.emptyDiv{
+    width: 250px;
+    height: 50px;
+    border-right: 3px solid white;
+    position: relative;
+    border-collapse: collapse;
+}
+.emptyDiv2{
+    width: 250px;
+    height: 50px;
+    border-collapse: collapse;
+}
+
+.block1{
+    margin-top: 80px;
+    position: relative;
+    
+    
+}
+
+.block2{
+    border-right: 3px solid white;
+}
+
+.number{
+    margin: 0;
+}
+
+.divPrimigen{
+    height: 280px;
+}
+
+.startCircle--number{
+    margin: auto;
+    font-size: 1rem;
+    padding-top: 0;
+}
+
+.c-timelineChar{
+    border-top:2px solid white;
+    width:250px;
+    height:280px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.c-timelineChar--div{
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+}
+
+.c-timelineChar--div__img{
+   width: 100%;
+   margin: auto;
+   
+    
+}
+
+.arrowTime{
+    margin: auto;
+    margin-left: 14.7rem;
+    height: 3rem;
+}
+
+.timeLineSectionMain::-webkit-scrollbar{
+    width: 4px;
+    background-color: #443d3d;
+}
+
+.timeLineSectionMain::-webkit-scrollbar-thumb{
+    width: 4px;
+    height: 91.3px;
+    background-color: white;
+}
+
+@media only screen and (max-device-width: 480px){
+    .mainDivTime{
+        max-width: 300px;
+    }
+    .timeLineSectionMain
+{
+    width: 100%;
+    margin-top: 8rem;
+    margin-left: 0rem;
+    
+}
+.emptyDiv,
+.emptyDiv2{
+    display: none;
+}
+.c-timelineChar{
+    width: 100%;
+    border: 0px solid white;
+}
+
+.block1,
+.block2{
+    margin-top: 0;
+    border-right: 0px solid white;
+}
+
+.figureClass{
+    border: 1px solid white;
+    width: 230px;
+}
+
+.arrowTime{
+    margin-left: 8.6rem;
+}
+
+}
