@@ -1,9 +1,10 @@
-import React, {  useEffect, useState } from "react";
+import React, {  useContext, useEffect, useState } from "react";
 import { API } from "../../context/api.const";
 import Nabvar from '../../components/NabVar/NabVar'
 import TransBar from '../../components/TransBar/TransBar'
 import './CharactersPage.scss'
 import CharactersGallery from "../../components/CharactersGallery/CharactersGallery";
+import { LoadingContext } from "../../context/LoadingContext";
 
 let allChar = [];
 
@@ -12,11 +13,12 @@ export default function CharactersPage() {
 
   const [characters, setCharacters] = useState([]);
   const [search , setSearch] = useState([]);
+  const {setIsLoading} = useContext(LoadingContext);
 
  const getCharacters = () => {
-    
+  setIsLoading(true)
     API.get("/api/show/characters").then((res) => {
-      
+      setIsLoading(false)
         allChar = res.data;
         setCharacters(res.data)
       
