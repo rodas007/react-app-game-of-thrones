@@ -2,25 +2,25 @@ import React from "react";
 import './TimelineGallery.scss'
 import down2 from '../../assets/images/down2.png'
 import up2 from '../../assets/images/up2.png'
-export function TimelineGallery(props) {
+export function TimelineGallery(timeLine) {
 
   
 
   return (
     <div className="timeLineSectionMain">
     <div className="timeLineSection">
-    <div className="startCircle" onClick={props.sortPeople}>
+    <div className="startCircle" onClick={timeLine.sortPeople}>
     <span className="startCircle--number">
-    {props.asc % 2 === 0 ? <p className="number">0</p> : <p className="number">100</p>}
+    {timeLine.asc % 2 === 0 ? <p className="number">0</p> : <p className="number">100</p>}
     </span>
    
     </div>
-    {props.asc % 2 !== 0 ? <img className="arrowTime"src={up2}></img> : <img className="arrowTime" src={down2}></img>}
+    {timeLine.asc % 2 !== 0 ? <img className="arrowTime"src={up2}></img> : <img className="arrowTime" src={down2}></img>}
    
      <div className="mainDivTime">
      <div className="emptyDiv"></div>
      <div className="emptyDiv2"></div>
-      {props.timelinePage.map((character, i)=>
+      {timeLine.timelinePage.map((character, i)=>
           <div key={i} className="divPrimigen">
           { i % 2 !== 0 ? <div className="c-timelineChar block1"><figure className="figureClass">  {
             character.name === 'Ellaria Sand' ? <h4>39</h4> :

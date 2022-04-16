@@ -1,5 +1,5 @@
 import React, {  useEffect, useState } from "react";
-import { API } from "../../styles/context/api.const";
+import { API } from "../../context/api.const";
 import Nabvar from '../../components/NabVar/NabVar'
 import TransBar from '../../components/TransBar/TransBar'
 import './CharactersPage.scss'
@@ -31,7 +31,7 @@ export default function CharactersPage() {
 
     const filterCharacters = allChar.filter((char)=>{
       
-      if (char.name.toLowerCase().includes(search.toLowerCase())) {
+      if (char.name.toLowerCase().includes(search.toString().toLowerCase())) {
           return char;
       }
     })
@@ -39,10 +39,6 @@ export default function CharactersPage() {
       setCharacters(filterCharacters);
                   
 }
-
-
-
-
 
 
 useEffect(getCharacters, [])

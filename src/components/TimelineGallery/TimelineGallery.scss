@@ -112,12 +112,24 @@
 }
 
 @media only screen and (max-device-width: 480px){
+    .startCircle {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        cursor: pointer;
+    }
+   
+
     .mainDivTime{
         max-width: 300px;
     }
     .timeLineSectionMain
 {
-    width: 100%;
+    width:100%;
     margin-top: 8rem;
     margin-left: 0rem;
     
@@ -130,7 +142,10 @@
     width: 100%;
     border: 0px solid white;
 }
-
+.c-timelineChar--div__img {
+    width: 100%;
+    margin: auto;
+}
 .block1,
 .block2{
     margin-top: 0;
@@ -139,11 +154,12 @@
 
 .figureClass{
     border: 1px solid white;
+    border-radius: 10%;
     width: 230px;
 }
 
 .arrowTime{
-    margin-left: 8.6rem;
+    margin-left: 8.4rem;
 }
 
 }

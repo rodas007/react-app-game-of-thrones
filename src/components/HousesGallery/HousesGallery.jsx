@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import "./HousesGallery.scss"
-export default function HousesGallery(props) {
+export default function HousesGallery(houses) {
   return (
 
 
     <div className="c-house-gallery">
     <div className="row">
-      {props.casa.map((casa, i) => (
+      {houses.casa.map((casa, i) => (
         <div
           key={i}
           className="c-house-gallery__content col-12 col-sm-6 col-md-6 col-lg-2 ">

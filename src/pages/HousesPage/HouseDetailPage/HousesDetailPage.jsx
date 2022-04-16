@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { API } from "../../../styles/context/api.const";
+import { API } from "../../../context/api.const";
 import './HousesDetailPage.scss';
 import { useParams } from 'react-router-dom';
 import TransBar from '../../../components/TransBar/TransBar'

@@ -2,7 +2,7 @@
 import React, {useEffect, useState } from "react";
 import TransBar from '../../components/TransBar/TransBar'
 import Nabvar from '../../components/NabVar/NabVar'
-import { API } from "../../styles/context/api.const";
+import { API } from "../../context/api.const";
 import  HousesGallery  from "../../components/HousesGallery/HousesGallery";
 import './HousesPages.scss';
 export default function HousesPage() {

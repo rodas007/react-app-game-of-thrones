@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { API } from "../../../styles/context/api.const";
+import { API } from "../../../context/api.const";
 import './CharactersDetailPage.scss';
 import logoDefault from "../../../assets/images/logoDefault.jpeg";
 import { useTranslation } from 'react-i18next/';

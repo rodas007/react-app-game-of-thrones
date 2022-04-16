@@ -5,9 +5,11 @@ import roslin from '../../assets/images/roslin.jpg';
 import walder from '../../assets/images/walderfrey.jpg'
 import oberyn from '../../assets/images/Oberyn.png'
 import grenn from '../../assets/images/grenn.jpg'
+import kinvara from '../../assets/images/kinvara.jpg'
+import mossador from '../../assets/images/Mossador.jpg'
 
 
-export default function CharactersGallery(props) {
+export default function CharactersGallery(character) {
 
 
 
@@ -18,7 +20,7 @@ export default function CharactersGallery(props) {
     <div className="c-characters-gallery">
     <div className="row">
     
-    {props.charactersGallery.map((item, index)=>
+    {character.charactersGallery.map((item, index)=>
 
     <div key={index} className="c-characters-gallery__content col-12 col-sm-6 col-md-4 col-lg-2">
     <Link to={"/characters/" + item.name}>
@@ -30,6 +32,10 @@ export default function CharactersGallery(props) {
         && item.name === '"Black Walder" Frey' ? <img className="c-characters-gallery__img" src={walder} alt={item.name}></img>
         : <img className="c-characters-gallery__img" src={item.image} alt={item.name}></img>
         && item.name === 'Grenn' ? <img className="c-characters-gallery__img" src={grenn} alt={item.name}></img>
+        : <img className="c-characters-gallery__img" src={item.image} alt={item.name}></img>
+        && item.name === 'Kinvara' ? <img className="c-characters-gallery__img" src={kinvara} alt={item.name}></img>
+        : <img className="c-characters-gallery__img" src={item.image} alt={item.name}></img>
+        && item.name === 'Mossador' ? <img className="c-characters-gallery__img" src={mossador} alt={item.name}></img>
         : <img className="c-characters-gallery__img" src={item.image} alt={item.name}></img>
     }
    <figcaption className="c-characters-gallery__name">{item.name}</figcaption>

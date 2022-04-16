@@ -9,7 +9,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 
 
-export default function TransBar(props) {
+export default function TransBar(transbar, translate) {
 
     const {t,i18n} = useTranslation(['translation']);
 
@@ -98,7 +98,7 @@ export default function TransBar(props) {
            {showSearchBar(location) &&  
            <div className="c-transBar__contentSearch">
            <label><img src={iconSearch} className="iconSearch"   alt="search"></img>
-           <input type="text" className="c-transBar__search" placeholder="Search..." onInput={props.handleChange}></input>
+           <input type="text" className="c-transBar__search" placeholder="Search..." onInput={transbar, translate.handleChange}></input>
            </label>
            </div>}
            {showIconBack(location) && location.pathname === charPage ? <NavLink className="c-transBar__imgBack" to="/characters"><img className="c-transBar__imgBack" src={iconBack} alt="img"  ></img><span className="span">{t('Back')}</span></NavLink> 
